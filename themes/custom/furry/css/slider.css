@@ -1,0 +1,42 @@
+.views-field-field-slider-item-image {
+  display: flex;
+  justify-content: center;
+}
+.views-field-field-slider-item-image img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+@media (max-width: 1024px) {
+  .views-field-field-slider-item-image img {
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 768px) {
+  .views-field-field-slider-item-image img {
+    margin-bottom: 15px;
+  }
+}
+
+.views-field-field-slider-item-text {
+  text-align: center;
+}
+
+.slick__slide {
+  display: block;
+  justify-content: center;
+  width: 380px !important;
+  margin: 0 10px;
+}
+@media (max-width: 1024px) {
+  .slick__slide {
+    width: 230px !important;
+    margin: 0 5px;
+  }
+}
+@media (max-width: 460px) {
+  .slick__slide {
+    width: 200px !important;
+  }
+}
+
+/*# sourceMappingURL=slider.css.map */

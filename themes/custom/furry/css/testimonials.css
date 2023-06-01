@@ -1,0 +1,111 @@
+#block-views-block-testimonials-block-1 {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 10px;
+  margin: 125px auto 0;
+}
+@media (max-width: 1024px) {
+  #block-views-block-testimonials-block-1 {
+    max-width: 730px;
+    margin-top: 90px;
+  }
+}
+#block-views-block-testimonials-block-1 h2 {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-size: 72px;
+  color: #DFF3E4;
+  text-align: center;
+  margin-bottom: 70px;
+}
+#block-views-block-testimonials-block-1 h2 .accent {
+  color: #4A35D4;
+}
+@media (max-width: 1024px) {
+  #block-views-block-testimonials-block-1 h2 {
+    font-size: 48px;
+  }
+}
+@media (max-width: 768px) {
+  #block-views-block-testimonials-block-1 h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  #block-views-block-testimonials-block-1 h2 {
+    margin-bottom: 50px;
+  }
+}
+
+.testimonials {
+  display: flex;
+  column-gap: 20px;
+  justify-content: center;
+}
+.testimonials h2 {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .testimonials {
+    column-gap: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .testimonials {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+  }
+}
+.testimonials .views-row .layout__region--content {
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  max-width: 380px;
+  border: 3px solid #DFF3E4;
+}
+.testimonials .views-row .layout__region--content img {
+  width: 180px;
+  height: 180px;
+}
+@media (max-width: 1024px) {
+  .testimonials .views-row .layout__region--content {
+    width: 224px;
+  }
+}
+
+.views-row .contextual-region {
+  height: 100%;
+}
+
+.views-row .contextual-region > div:last-child {
+  height: 100%;
+}
+
+.views-row .contextual-region > div:last-child .layout--onecol {
+  height: 100%;
+}
+
+.block-field-blocknodetestimonialfield-feedback-text {
+  text-align: justify;
+}
+@media (max-width: 1024px) {
+  .block-field-blocknodetestimonialfield-feedback-text {
+    text-align: center;
+  }
+}
+
+.block-field-blocknodetestimonialfield-client-name- {
+  font-weight: 500;
+  font-size: 26px;
+}
+@media (max-width: 1024px) {
+  .block-field-blocknodetestimonialfield-client-name- {
+    font-size: 22px;
+  }
+}
+
+/*# sourceMappingURL=testimonials.css.map */

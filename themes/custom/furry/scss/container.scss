@@ -1,0 +1,11 @@
+@import "variables";
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+  @media (max-width: $desktop) {
+    max-width: 730px;
+  }
+}

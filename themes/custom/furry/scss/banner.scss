@@ -1,0 +1,65 @@
+@import "variables";
+@import "mixins";
+#block-banner {
+  @media (max-width: $desktop) {
+    margin: 66px auto 60px;
+  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 10px;
+  margin: 126px auto 120px;
+  text-align: center;
+  @media (max-width: $desktop) {
+    max-width: 730px;
+  }
+  & > div:nth-child(2) {
+    @include section_title;
+  }
+  & > div:nth-child(3) {
+    text-align: center;
+    margin-top: 26px;
+    max-width: 780px;
+    @media (max-width: $desktop) {
+      max-width: 480px;
+      margin-top: 20px;
+    }
+  }
+  & > div:nth-child(4) a {
+    background-color: $accent-color;
+    font-family: $text-font;
+    color: $text-color;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+
+    &:hover {
+      background-color: $accent-hover-color;
+    }
+    font-weight: 500;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 32px;
+    width: 580px;
+    height: 90px;
+    @media (max-width: 1200px) {
+      width: 350px;
+      height: 70px;
+      font-size: 24px;
+    }
+    @media (max-width: $tablet) {
+      width: 270px;
+      height: 50px;
+      font-size: 16px;
+
+    }
+    margin-top: 70px;
+    @media (max-width: $desktop) {
+      margin-top: 35px;
+    }
+  }
+}

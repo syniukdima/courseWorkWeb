@@ -1,0 +1,38 @@
+@import "variables";
+@import "mixins";
+#block-views-block-slider-block-1 {
+
+}
+
+
+.views-field-field-slider-item-image {
+  display: flex;
+  justify-content: center;
+  img {
+    width: 100%;
+    margin-bottom: 30px;
+    @media (max-width: $desktop) {
+      margin-bottom: 25px;
+    }
+    @media (max-width: $tablet) {
+      margin-bottom: 15px;
+    }
+  }
+}
+.views-field-field-slider-item-text {
+  text-align: center;
+}
+
+.slick__slide {
+  display: block;
+  justify-content: center;
+  width: 380px !important;
+  margin: 0 10px;
+  @media (max-width: $desktop) {
+    width: 230px !important;
+    margin: 0 5px;
+  }
+  @media (max-width: $phone) {
+    width: 200px !important;
+  }
+}

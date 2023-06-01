@@ -1,0 +1,14 @@
+name: "Furry Theme Dark"
+type: theme
+core_version_requirement: 9.x || 10.x
+base theme: stark
+
+libraries:
+  - furry/global
+
+regions:
+  header: 'Header'
+  primary_menu: 'Primary Menu'
+  secondary_navigation: 'Secondary Navigation'
+  content: Content
+  footer: 'Footer'

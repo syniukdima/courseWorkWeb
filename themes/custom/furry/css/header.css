@@ -1,0 +1,131 @@
+header {
+  margin-top: 48px;
+  height: 100px;
+}
+
+.header__inner {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 20px;
+  position: relative;
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo-brand {
+  display: flex;
+  flex-direction: column;
+}
+
+.site-name {
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 8px;
+  text-decoration: none;
+  color: #DFF3E4;
+}
+
+.site-slogan {
+  font-weight: 600;
+  font-size: 20px;
+  margin-left: 20px;
+}
+@media (max-width: 460px) {
+  .site-slogan {
+    display: inline;
+  }
+}
+
+.header__inner-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.menu {
+  display: flex;
+  column-gap: 25px;
+}
+@media (max-width: 1024px) {
+  .menu {
+    display: none;
+    background: #171738;
+  }
+  .menu.active {
+    width: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    position: absolute;
+    top: 120px;
+    border: 2px solid #DFF3E4;
+  }
+  .menu.active li {
+    margin-bottom: 15px;
+  }
+}
+.menu li {
+  padding: 10px 0;
+}
+.menu .menu-item a {
+  padding: 10px 0;
+  border-bottom: 1px solid transparent;
+}
+.menu .menu-item a.active, .menu .menu-item a:hover {
+  border-bottom: 1px solid #DFF3E4;
+}
+
+.header__menu-btn {
+  display: none;
+}
+.header__menu-btn:hover {
+  cursor: pointer;
+}
+@media (max-width: 1024px) {
+  .header__menu-btn {
+    display: block;
+    outline: none;
+    border: none;
+    width: 50px;
+    height: 50px;
+    background-color: #171738;
+  }
+}
+
+.contextual-region {
+  position: static;
+}
+
+@media (max-width: 768px) {
+  .header__inner > div:last-child {
+    display: none;
+  }
+}
+.header__inner > div:last-child .contextual + div {
+  background-color: #4A35D4;
+  font-family: "Inter", sans-serif;
+  color: #DFF3E4;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  max-width: 280px;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 15px 25px;
+}
+.header__inner > div:last-child .contextual + div:hover {
+  background-color: #4128BF;
+}
+@media (max-width: 768px) {
+  .header__inner > div:last-child .contextual + div {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */

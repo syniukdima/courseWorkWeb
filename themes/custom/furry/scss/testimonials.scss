@@ -1,0 +1,82 @@
+@import "variables";
+@import "mixins";
+
+#block-views-block-testimonials-block-1 {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 10px;
+  margin: 125px auto 0;
+  @media (max-width: $desktop) {
+    max-width: 730px;
+    margin-top: 90px;
+  }
+  h2 {
+    @include section_title();
+    text-align: center;
+    margin-bottom: 70px;
+    @media (max-width: $tablet) {
+      margin-bottom: 50px;
+    }
+  }
+}
+.testimonials {
+  h2 {
+    display: none;
+  }
+  display: flex;
+  column-gap: 20px;
+  justify-content: center;
+  @media (max-width: $desktop) {
+    column-gap: 10px;
+  }
+  @media (max-width: $tablet) {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+  }
+  .views-row .layout__region--content {
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    img {
+      width: 180px;
+      height: 180px;
+    }
+
+    max-width: 380px;
+    border: 3px solid $text-color;
+    @media (max-width: $desktop) {
+      width: 224px;
+    }
+  }
+}
+
+.views-row .contextual-region {
+  height: 100%;
+}
+
+.views-row .contextual-region > div:last-child {
+  height: 100%;
+}
+
+.views-row .contextual-region > div:last-child .layout--onecol{
+  height: 100%;
+}
+
+.block-field-blocknodetestimonialfield-feedback-text {
+  text-align: justify;
+  @media (max-width: $desktop) {
+    text-align: center;
+  }
+}
+
+.block-field-blocknodetestimonialfield-client-name- {
+  font-weight: 500;
+  font-size: 26px;
+  @media (max-width: $desktop) {
+    font-size: 22px;
+  }
+}

@@ -1,0 +1,20 @@
+global:
+  css:
+    layout:
+      https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Inter:wght@400;500;600;700&display=swap: { type: external }
+      css/header.css: {}
+      css/footer.css: {}
+      css/slider.css: {}
+      css/banner.css: {}
+      css/benefits.css: {}
+      css/about.css: {}
+      css/body.css: {}
+      css/buttons.css: {}
+      css/container.css: {}
+      css/examples.css: {}
+      css/eyecatcher.css: {}
+      css/portfolio.css: {}
+      css/reset.css: {}
+      css/testimonials.css: {}
+      css/variety.css: {}
+      css/order.css: {}

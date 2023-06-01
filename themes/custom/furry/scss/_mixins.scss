@@ -1,0 +1,15 @@
+@mixin section_title() {
+  font-family: $title-font;
+  font-weight: 500;
+  font-size: 72px;
+  color: $text-color;
+  .accent {
+    color: $accent-color;
+  }
+  @media (max-width: $desktop) {
+    font-size: 48px;
+  }
+  @media (max-width: $tablet) {
+    font-size: 30px;
+  }
+}

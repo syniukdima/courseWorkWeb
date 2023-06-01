@@ -1,0 +1,113 @@
+@import "variables";
+@import "mixins";
+.layout--onecol .layout__region{
+  h2 {
+    @include section_title();
+    text-align: center;
+    margin: 120px 0 90px;
+    @media (max-width: $desktop) {
+      margin: 80px 0 70px;
+    }
+    @media (max-width: $tablet) {
+      margin: 65px 0 50px;
+    }
+  }
+}
+.portfolio-view {
+  h2 {
+    display: none;
+  }
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 20px;
+  row-gap: 60px;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: $desktop) {
+    column-gap: 10px;
+    row-gap: 45px;
+  }
+  @media (max-width: $tablet) {
+    row-gap: 30px;
+  }
+  .views-row .layout__region {
+
+    display: flex;
+    flex-direction: column;
+    max-width: 580px;
+    img {
+      width: 580px;
+      height: 400px;
+      margin-bottom: 30px;
+      @media (max-width: 1250px) {
+        width: 450px;
+        height: 340px;
+      }
+      @media (max-width: $desktop) {
+        width: 350px;
+        height: 240px;
+      }
+      @media (max-width: $tablet) {
+        width: 200px;
+        height: 140px;
+        margin-bottom: 15px;
+      }
+    }
+    span {
+      font-family: $title-font;
+      font-weight: 500;
+      font-size: 28px;
+      @media (max-width: $desktop) {
+        font-size: 24px;
+      }
+      @media (max-width: $tablet) {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.pager {
+  display: flex;
+  justify-content: center;
+  margin: 103px 0 128px;
+  @media (max-width: $desktop) {
+    margin: 50px 0 90px;
+  }
+  @media (max-width: $tablet) {
+    margin: 40px 0 60px;
+  }
+  width: 100%;
+  &__items {
+    display: flex;
+    column-gap: 25px;
+    align-items: center;
+
+  }
+  &__item {
+    &--previous, &--next {
+      display: none;
+    }
+    a {
+      font-size: 32px;
+      @media (max-width: $desktop) {
+        font-size: 28px;
+      }
+      @media (max-width: $tablet) {
+        font-size: 16px;
+      }
+    }
+    &:hover, &.is-active {
+      a {
+        font-size: 40px;
+        @media (max-width: $desktop) {
+          font-size: 36px;
+        }
+        @media (max-width: $tablet) {
+          font-size: 20px;
+        }
+        text-decoration: underline !important;
+      }
+    }
+  }
+}
